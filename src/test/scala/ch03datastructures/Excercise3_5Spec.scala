@@ -6,7 +6,7 @@ class Excercise3_5Spec extends AnyFunSpec with Diagrams {
   describe("Excercise3_5") {
     it("return duplicated list") {
       assert(
-        Excercise3_5.dropWhile(List(1, 2, 3), (a: Int) => a == 2) == Cons(
+        Excercise3_5.dropWhile(List(1, 2, 3))(a => a == 2) == Cons(
           3,
           Nil
         )
